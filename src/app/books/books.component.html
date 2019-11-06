@@ -1,0 +1,25 @@
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Authors</th>
+      <th>Category</th>
+      <th>Status</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let book of bookList">
+    <tr>
+
+      <td>{{ book.id}}</td>
+      <td>{{ book.title}}</td>
+      <td>{{book.authors}}</td>
+      <td>{{book.category.nameCategory}}</td>
+      <td>{{book.status.nameStatus}}</td>
+    </tr>
+
+
+    </tbody>
+  </table>
+</div>
